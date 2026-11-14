@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-labelledby="title desc">
+<title id="title">Золотокрилий лицарський шолом</title>
+<desc id="desc">Симетрична фентезійна емблема зі сталевим шоломом і золотими крилами.</desc>
+<defs>
+  <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#fff2a6"/><stop offset=".22" stop-color="#e8a92e"/>
+    <stop offset=".48" stop-color="#8c4b0c"/><stop offset=".68" stop-color="#ffd45a"/>
+    <stop offset="1" stop-color="#713707"/>
+  </linearGradient>
+  <linearGradient id="goldLight" x1="0" y1="0" x2="0.8" y2="1">
+    <stop stop-color="#fff6bd"/><stop offset=".35" stop-color="#ffc744"/><stop offset="1" stop-color="#9a520b"/>
+  </linearGradient>
+  <linearGradient id="steel" x1="0" y1="0" x2="1" y2="1">
+    <stop stop-color="#f4f7f7"/><stop offset=".25" stop-color="#77838b"/>
+    <stop offset=".55" stop-color="#303b45"/><stop offset=".78" stop-color="#aab2b5"/>
+    <stop offset="1" stop-color="#242b32"/>
+  </linearGradient>
+  <linearGradient id="steelDark" x1="0" y1="0" x2="1" y2="1">
+    <stop stop-color="#59636b"/><stop offset=".5" stop-color="#161e26"/><stop offset="1" stop-color="#78828a"/>
+  </linearGradient>
+  <linearGradient id="visor" x1="0" y1="0" x2="0" y2="1">
+    <stop stop-color="#05080d"/><stop offset=".55" stop-color="#20252a"/><stop offset="1" stop-color="#000"/>
+  </linearGradient>
+  <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+    <feGaussianBlur in="SourceAlpha" stdDeviation="9" result="blur"/>
+    <feOffset dy="9" result="off"/><feComponentTransfer><feFuncA type="linear" slope=".65"/></feComponentTransfer>
+    <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <g id="wing">
+    <path d="M385 535 C285 494 177 419 118 300 C88 239 87 154 135 78 C151 168 198 215 258 249 C214 252 191 270 184 299 C251 312 292 352 319 400 C275 384 242 395 225 425 C292 432 339 466 385 535Z" fill="url(#gold)" stroke="#3b2109" stroke-width="15" stroke-linejoin="round"/>
+    <path d="M135 78 C151 168 198 215 258 249 C214 252 191 270 184 299 C157 250 137 177 135 78Z" fill="url(#goldLight)" stroke="#f9d56b" stroke-width="5"/>
+    <path d="M184 299 C251 312 292 352 319 400 C275 384 242 395 225 425 C205 382 190 338 184 299Z" fill="#c17a18" stroke="#f6c34b" stroke-width="6"/>
+    <path d="M118 300 C178 330 236 377 273 438 C220 420 177 435 155 469 C132 416 119 359 118 300Z" fill="url(#goldLight)" stroke="#4a2a0c" stroke-width="10"/>
+    <path d="M155 469 C226 460 293 489 348 548 C281 520 226 535 194 573 C170 543 158 507 155 469Z" fill="url(#gold)" stroke="#4a2a0c" stroke-width="10"/>
+    <path d="M194 573 C259 557 321 579 376 628 C306 611 255 635 230 674 C208 646 196 610 194 573Z" fill="url(#goldLight)" stroke="#4a2a0c" stroke-width="10"/>
+    <path d="M225 425 Q278 438 319 492 M155 469 Q230 477 284 532 M194 573 Q258 580 315 635" fill="none" stroke="#ffe18a" stroke-width="7" opacity=".8"/>
+    <path d="M260 250 Q295 300 338 350 M319 400 Q345 432 369 471" fill="none" stroke="#6d3909" stroke-width="7" opacity=".8"/>
+  </g>
+</defs>
+
+<!-- shadow and symmetrical wings -->
+<g filter="url(#shadow)">
+  <use href="#wing"/>
+  <use href="#wing" transform="translate(1024 0) scale(-1 1)"/>
+
+  <!-- rear helmet silhouette -->
+  <path d="M294 414 Q300 228 512 194 Q724 228 730 414 L704 735 Q666 845 512 936 Q358 845 320 735Z"
+        fill="#111820" stroke="#4a2b0d" stroke-width="22" stroke-linejoin="round"/>
+  <!-- steel crown -->
+  <path d="M316 421 Q326 252 512 220 Q698 252 708 421 L675 641 Q512 715 349 641Z"
+        fill="url(#steel)" stroke="url(#gold)" stroke-width="18"/>
+  <path d="M343 414 Q360 286 512 250 L512 665 Q405 637 363 574Z"
+        fill="url(#steelDark)" stroke="#d4d9d8" stroke-width="7"/>
+  <path d="M681 414 Q664 286 512 250 L512 665 Q619 637 661 574Z"
+        fill="url(#steel)" stroke="#f3d17b" stroke-width="7"/>
+  <!-- crown center ridge -->
+  <path d="M512 190 L570 316 L548 514 L512 591 L476 514 L454 316Z"
+        fill="url(#goldLight)" stroke="#4b2807" stroke-width="15" stroke-linejoin="round"/>
+  <path d="M512 211 L535 326 L512 492 L489 326Z" fill="#ffe68b" opacity=".8"/>
+  <!-- brow and visor -->
+  <path d="M337 535 Q512 610 687 535 L661 626 Q512 700 363 626Z"
+        fill="url(#gold)" stroke="#38200b" stroke-width="14" stroke-linejoin="round"/>
+  <path d="M365 570 Q512 635 659 570 L633 704 L512 755 L391 704Z"
+        fill="url(#visor)" stroke="#1b1712" stroke-width="12" stroke-linejoin="round"/>
+  <path d="M389 590 Q512 642 635 590" fill="none" stroke="#f6c44e" stroke-width="13"/>
+  <!-- lower cheek plates -->
+  <path d="M365 632 L450 675 L461 861 L390 803 Q355 733 365 632Z"
+        fill="url(#steel)" stroke="url(#gold)" stroke-width="15" stroke-linejoin="round"/>
+  <path d="M659 632 L574 675 L563 861 L634 803 Q669 733 659 632Z"
+        fill="url(#steel)" stroke="url(#gold)" stroke-width="15" stroke-linejoin="round"/>
+  <!-- central nose guard -->
+  <path d="M482 650 L542 650 L559 911 L512 965 L465 911Z"
+        fill="url(#gold)" stroke="#3b2109" stroke-width="15" stroke-linejoin="round"/>
+  <path d="M501 677 L523 677 L531 894 L512 927 L493 894Z" fill="#171c22"/>
+  <!-- edge highlights -->
+  <path d="M331 424 Q343 300 424 267 M693 424 Q681 300 600 267 M384 646 L409 782 M640 646 L615 782"
+        fill="none" stroke="#fff1b0" stroke-width="7" opacity=".65"/>
+  <path d="M512 193 L512 240 M350 825 L390 858 M674 825 L634 858"
+        fill="none" stroke="#f8d16a" stroke-width="6" opacity=".8"/>
+</g>
+</svg>
