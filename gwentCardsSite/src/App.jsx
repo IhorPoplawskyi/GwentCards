@@ -4,6 +4,7 @@ import { factions } from "./data/factionts";
 import { red } from "./data/cards/red";
 import { green } from "./data/cards/green";
 import { neutral } from "./data/cards/neutral";
+import { hwmkingdom } from "./data/cards/hwmkingdom";
 
 const getCardWord = (count) => {
   if (count % 10 === 1 && count % 100 !== 11) return "КАРТА";
@@ -20,7 +21,7 @@ const getCardWord = (count) => {
 const cards = {
   red: red,
   green: green,
-  blue: [[], [], []],
+  blue: hwmkingdom,
   neutral: neutral,
 };
 
@@ -111,7 +112,7 @@ function Faction({ faction, onCardClick }) {
             ) : (
               <div className="empty-row">
                 <span>✧</span>
-                <span>Картки цього ряду</span>
+                <span>Карт пока нет</span>
               </div>
             )}
           </div>
@@ -157,7 +158,7 @@ export default function App() {
           </div>
 
           <div className="hero-count">
-            <span>THREE FACTIONS</span>
+            <span>FOUR FACTIONS</span>
             <span>·</span>
             <span>THREE BATTLE ROWS</span>
           </div>
@@ -165,7 +166,7 @@ export default function App() {
 
         <nav className="faction-nav">
           {factions.map((f) => (
-            <a key={f.id} href={`#${f.id}`} style={{ "--faction": f.color }}>
+            <a key={f.id} href={`#${f.id}`} style={{ "--faction": f.color, fontSize: "0.8rem" }}>
               <span>{f.symbol}</span>
               {f.name}
             </a>

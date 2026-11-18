@@ -10,6 +10,11 @@ export const red = [
       name: "Куколдские ноги",
       image: "/cards/exornogi.png",
     },
+    {
+      id: 3,
+      name: "Безухий",
+      image: "/cards/bezuhiy.png",
+    },
   ],
   [
     {
@@ -43,6 +48,16 @@ export const red = [
       id: 2,
       name: "Моня",
       image: "/cards/monya.jpeg",
+    },
+    {
+      id: 3,
+      name: "КабаНосик",
+      image: "/cards/komazik.jpg",
+    },
+    {
+      id: 4,
+      name: "Ихарян",
+      image: "/cards/ihar.jpg",
     },
   ],
 ];

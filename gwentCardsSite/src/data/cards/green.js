@@ -11,6 +11,12 @@ export const green = [
       image: "/cards/kotel.jpg",
     },
   ],
-  [],
+  [
+    {
+      id: 1,
+      name: "Дед",
+      image: "/cards/ded.png",
+    },
+  ],
   [],
 ];
